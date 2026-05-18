@@ -87,15 +87,17 @@ cd TZ1_UP_01.01
 
 ## 7. Демонстрация
 - Скриншоты интерфейса:
-Главное окно с темами
 <img width="1346" height="533" alt="Main" src="https://github.com/user-attachments/assets/302353e1-db52-418b-94f2-d8013e97be1b" />
 
-Таблица Менделеева
+Рисунок 1.1 - Главное окно с темами
+
 <img width="1346" height="533" alt="Таблица_Менделеева" src="https://github.com/user-attachments/assets/1800b1c8-48cf-4588-94b4-6698d54a88ed" />
 
-Поиск элементов
+Рисунок 1.2 - Таблица Менделеева
+
 <img width="1346" height="533" alt="Поиск_элементов" src="https://github.com/user-attachments/assets/ef6d8d75-4749-446a-afd9-ef5571ab9341" />
 
+Рисунок 1.3 - Поиск элементов
 
 ## 8. Тестирование
 Для запуска тестов:
