@@ -1,0 +1,14 @@
+# Принудительно фиксируем UTF-8 и перевод строк
+* text=auto eol=lf
+
+# Исходный код строго в UTF-8 без BOM
+*.cs text eol=lf working-tree-encoding=UTF-8
+*.csproj text eol=lf working-tree-encoding=UTF-8
+*.xaml text eol=lf working-tree-encoding=UTF-8
+*.md text eol=lf working-tree-encoding=UTF-8
+*.config text eol=lf working-tree-encoding=UTF-8
+
+# Исполняемые файлы и библиотеки как бинарные (не трогать кодировку)
+*.exe binary
+*.dll binary
+*.json text eol=lf
