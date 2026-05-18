@@ -1,0 +1,86 @@
+# .gitignore для ChemistryApp (WPF + PostgreSQL + xUnit)
+# Сохраняет кодировку UTF-8 и настройки проекта
+
+# СОХРАНЯЕМ ВАЖНЫЕ ФАЙЛЫ
+# Эти файлы содержат настройки кодировки и структуры проекта
+!*.csproj
+!*.sln
+!*.cs
+!*.xaml
+!*.xaml.cs
+!*.config
+!appsettings.json
+!README.md
+!.gitignore
+
+# ИГНОРИРУЕМ ВРЕМЕННЫЕ ФАЙЛЫ VISUAL STUDIO
+# Пользовательские настройки (могут ломать кодировку на других ПК)
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dll.userprefs
+
+# Папка настроек VS (локальная, не нужна в репозитории)
+.vs/
+
+# ИГНОРИРУЕМ РЕЗУЛЬТАТЫ СБОРКИ
+# Игнорируем Debug, но РАЗРЕШАЕМ Release (по ТЗ нужен .exe)
+bin/Debug/
+bin/AnyCPU/
+bin/x86/
+bin/x64/
+
+# Разрешаем папку Release для исполняемого файла
+!bin/Release/
+
+# Игнорируем промежуточные файлы компиляции
+obj/
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.iobj
+*.ipdb
+
+# Игнорируем все .exe и .dll КРОМЕ тех, что в Release
+*.exe
+!bin/Release/**/*.exe
+*.dll
+!bin/Release/**/*.dll
+
+# ИГНОРИРУЕМ ПАКЕТЫ И ЗАВИСИМОСТИ
+# Пакеты NuGet восстанавливаются автоматически
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+
+# Папка инструментов (если используется)
+tools/
+
+# ИГНОРИРУЕМ ФАЙЛЫ РЕШАРПЕР И ДРУГИХ ПЛАГИНОВ
+*.DotSettings.user
+_ReSharper.Caches/
+*.ReSharper.user
+
+# ИГНОРИРУЕМ СИСТЕМНЫЕ ФАЙЛЫ
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.temp
+
+# ИГНОРИРУЕМ ОТЧЁТЫ И РЕЗУЛЬТАТЫ ТЕСТОВ
+TestResults/
+*.coverage
+*.opencover.xml
+*.trx
+
+# ИГНОРИРУЕМ КОНФИДЕНЦИАЛЬНЫЕ ДАННЫЕ
+# Никогда не коммить пароли и ключи!
+secrets.json
+*.pubxml
+*.publishsettings

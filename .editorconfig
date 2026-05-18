@@ -1,0 +1,27 @@
+# Глобальные настройки кодировки и форматирования для ChemistryApp
+
+root = true
+
+[*]
+# Принудительная кодировка UTF-8 без BOM для всех файлов
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.cs]
+# Настройки для C# файлов
+csharp_new_line_before_open_brace = all
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+
+[*.xaml]
+# Настройки для XAML файлов
+xaml_indent_size = 4
+xaml_keep_first_attribute_on_same_line = true
+
+[*.csproj]
+# Настройки для файлов проекта
+indent_style = space
+indent_size = 2
